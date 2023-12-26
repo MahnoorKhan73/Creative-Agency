@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.first_container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.first_container >div {
+    width: 30%;
+    height: 100px;
+    background-color: steelblue;
+    color: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:600px) {
+    .first_container > div {
+        background-color: cadetblue;
+        color: white;
+        width:95%;
+    }
+}
+@media (max-width:650px){
+    .first_container .one{
+        display: block;
+        width: 100%;
+    }
+}
